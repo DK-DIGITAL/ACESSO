@@ -6,10 +6,10 @@ export default function handler(req, res) {
   console.log("REDIRECT_URI: ", redirectUri);  
 
   if (!clientId || !redirectUri) {
-    return res.status(400).json({ error: "Missing environment variables." });
+    return res.status(400).json({ error: "Missing environment variables." };
   }
   const scopes = 'advertising::audiences,advertising::campaign_management,advertising::create_account';
 
   const authUrl = https://www.amazon.com/ap/oa?client_id=${clientId}&scope=cpc_advertising:campaign_management&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)};
   res.redirect(authUrl);}
-}
+
