@@ -11,6 +11,5 @@ export default function handler(req, res) {
   const scopes = 'advertising::audiences,advertising::campaign_management,advertising::create_account';
 
   const authUrl = https://www.amazon.com/ap/oa?client_id=${clientId}&scope=cpc_advertising:campaign_management&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)};
-
-  res.redirect(authUrl);
+  res.redirect(authUrl);}
 }
